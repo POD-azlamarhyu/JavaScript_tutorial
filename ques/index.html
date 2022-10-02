@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=shift_jis" />
+        <meta http-equiv="Content-Type" content="text/html; charset=euc-jp" />
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-2022-jp" />
+        <meta name="viewport" content="width = device-width ,initial-scale = 1" />
+        <meta name="author" content="" />
+        <meta name="robots" content="noindex,nofollow" />
+        <meta http-equiv="pragma" content="no-cache" />
+        <meta http-equiv="cache-control" content="no-cache" />
+        <meta http-equiv="Content-Style-Type" content="text/css" />
+        <meta http-equiv="Content-Script-Type" content="text/javascript" />
+        <title>JavaScript</title>
+        <meta itemprop="position" content="" />
+        <meta name="description" content="" />
+        <meta name="keyword" content="" />
+        <meta name="generator" content="notepad" />
+        <link type="text/css" href="" rel="stylesheet"/>
+        <link type="text/css" href="" rel="stylesheet" />
+        <link
+        href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+        rel="stylesheet"
+        />
+        <script type="text/javascript" src=""></script>
+    </head>
+    <body>
+        <section id="section1" style="margin: 5px;">
+            <form>
+                <label for="number">数字 : </label>
+                <input type="number" id="text1" value="" placeholder="1"/>
+                <input type="button" value="判定" onclick="main1()"/>
+                <p id="para1"></p>
+            </form>
+        </section>
+        <script type="text/javascript" src="main1.js"></script>
+        <p></p>
+
+        <section id="section2" style="margin: 5px;">
+            <form>
+                <label>あなたの好きなアニメは？</label>
+                <li>
+                    <input type="radio" name="radiobtn" value="鬼滅の刃" onclick="main2()"/>鬼滅の刃
+                </li>
+                <li>
+                    <input type="radio" name="radiobtn" value="銀魂" onclick="main2()"/>銀魂
+                </li>
+                <li>
+                    <input type="radio" name="radiobtn" value="Naruto" onclick="main2()"/>Naruto
+                </li>
+                <li>
+                    <input type="radio" name="radiobtn" value="Bleach" onclick="main2()"/>Bleach
+                </li>
+            </form>
+        </section>
+        <script type="text/javascript" src="main2.js"></script>
+        <p></p>
+        <section id="section3" style="margin: 5px;">
+            <form style="flex: auto;">
+                <p>
+                    <label for="name">名前</label>
+                    <input type="text" id="text2" name="name" value="" placeholder="Taro Tanaka" />
+                </p>
+
+                <p id="para2"></p>
+
+                <p>
+                    <label for="number">年齢</label>
+                    <input type="nuber" id="age1" name="ages" value="" placeholder="22" />
+                </p>
+
+                <p>
+                    <label for="email">メールアドレス</label>
+                    <input type="email" id="email" name="email" value="" placeholder="sample@sample.com" />
+                </p>
+            </form>
+        </section>
+        <script type="text/javascript" src="main3.js"></script>
+
+        <div style="width: 100%; height:1000px;">
+            <span id="img">
+                <img src="./images/image1.png" width="64"/>
+            </span>
+        </div>
+        <script type="text/javascript" src="main4.js"></script>
+
+        <div>
+            <img src="./images/image2.png" / id="img2" style="visibility: visible;">
+            <span></span>
+            <form>
+                <input type="button" id="btn1" value="画像非表示" onclick="func1()" />
+                <input type="button" id="btn2" value="画像拡大" onclick="func2()" />
+                <input type="button" id="btn2" value="画像縮小" onclick="func3()" />
+            </form>
+        </div>
+        <script type="text/javascript" src="main5.js"></script>
+    </body>
+</html>
